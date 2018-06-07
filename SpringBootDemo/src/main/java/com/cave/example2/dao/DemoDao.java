@@ -2,7 +2,7 @@ package com.cave.example2.dao;
 
 import org.springframework.stereotype.Repository;
 
-@Repository
+//@Repository
 public class DemoDao {
 
     public DemoDao() {
