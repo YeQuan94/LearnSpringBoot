@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
 
 /**
- * SpringBoot + MyBatis
+ * SpringBoot + MyBatis + Druid
  */
 @SpringBootApplication
 @MapperScan( basePackages = {"com.cave.springbootdemo.example3.dao.mapper"})

@@ -35,10 +35,15 @@ public class DruidDataSourceConfig {
      * 使用@Bean的方式配置Servlet需要使用ServletRegistrationBean
      * Servlet-chain来配置Servlet
      *
+     * PS:一个ServletRegistrationBean只能配置一个Servlet，多个Servlet需要添加新@Bean配置
+     *
+     * Druid官方StatViewServlet配置
+     * https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_StatViewServlet%E9%85%8D%E7%BD%AE
+     *
      * @return
      */
     @Bean
-    public ServletRegistrationBean getServletRegistrationBean(){
+    public ServletRegistrationBean getStatViewServlet(){
         ServletRegistrationBean servletRegistrationBean = new ServletRegistrationBean();
         // 关联Servlet
         servletRegistrationBean.setServlet(new StatViewServlet());
@@ -54,6 +59,8 @@ public class DruidDataSourceConfig {
         return servletRegistrationBean;
     }
 
+    // https://github.com/alibaba/druid/wiki/%E9%85%8D%E7%BD%AE_StatFilter
+    // Druid还存在一个内置StatFilter监控，目前还没有配置这个
 
     public String getUrl() {
         return url;
