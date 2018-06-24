@@ -23,4 +23,19 @@ public class UserServiceImpl implements UserService {
         List<User> select = userMapper.select(userExample);
         return select;
     }
+
+    @Override
+    public void addUser(User user) {
+        userMapper.insert(user);
+    }
+
+    @Override
+    public void updateUser(User user) {
+        userMapper.updateByPrimaryKey(user);
+    }
+
+    @Override
+    public void deleteUser(String uid) {
+        userMapper.deleteByPrimaryKey(uid);
+    }
 }

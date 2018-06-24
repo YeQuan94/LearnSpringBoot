@@ -8,4 +8,9 @@ public interface UserService {
 
     List<User> findUserByNickName(String nickName);
 
+    void addUser(User user);
+
+    void updateUser(User user);
+
+    void deleteUser(String uid);
 }

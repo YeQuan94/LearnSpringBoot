@@ -1,6 +1,7 @@
 package com.cave.springbootdemo.example4.pojo;
 
 import javax.persistence.Column;
+import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Table( name = "s_user")
@@ -16,6 +17,7 @@ public class User {
      *   PRIMARY KEY (`uid`)
      */
 
+    @Id // 不添加这个注解，MyBatis无法识别主键
     private Integer uid;
     private String username;
     private String nickname;
