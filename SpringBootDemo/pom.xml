@@ -41,6 +41,13 @@
             <version>2.0.0.RELEASE</version>
         </dependency>
 
+        <!-- SpringDataMongoDB + MongoDB Driver -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+
         <!-- spring-boot-starter-jdbc 默认使用HikariPC为数据源 -->
 
         <!-- Starter-JDBC + MyBatis + 通用Mapper -->
