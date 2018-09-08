@@ -48,6 +48,27 @@
             <version>2.0.0.RELEASE</version>
         </dependency>
 
+        <!-- Lucene 7 = core + queries + sandbox -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-queryparser</artifactId>
+            <version>7.1.0</version>
+        </dependency>
+
+        <!-- Lucene高亮 -->
+        <dependency>
+            <groupId>org.apache.lucene</groupId>
+            <artifactId>lucene-highlighter</artifactId>
+            <version>7.1.0</version>
+        </dependency>
+
+        <!-- IK分词器 Lucene 7 对应的IK版本-->
+        <dependency>
+            <groupId>cn.bestwu</groupId>
+            <artifactId>ik-analyzers</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+
         <!-- spring-boot-starter-jdbc 默认使用HikariPC为数据源 -->
 
         <!-- Starter-JDBC + MyBatis + 通用Mapper -->
